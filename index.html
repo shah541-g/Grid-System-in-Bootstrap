@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Grid System</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div class="container-fluid text-center">
+    <h1 class="bg-primary text-white p-3 col-12">Bootstrap Grid System</h1>
+  </div>
+  <div class="container text-center my-4 text-uppercase">
+      
+
+      <div class="row mb-3 justify-content-center">
+        
+        <p class="p-3 col-5 ">Here we are going to learn about the bootstrap grid system. the bootstrap grid system is mainly used to create responsive layouts, especially considering <span class="fw-bold">mobile first approach.</span> There are a few examples regarding this topic, let us have a look at those examples, <span class="fw-bold">a deep dive.</span></p>
+        
+        
+      </div>
+
+      <div class="row">
+        <h4 class="p-3 text-start mb-5">Example 1: <span class="text-reset fw-normal">The Art Of Columns Inside A Row</span></h4>
+      </div>
+      <div class="row text-white">
+        <div class="p-2 col bg-success">Column 1</div>
+        <div class="p-2 col bg-warning">Column 2</div>
+        <div class="p-2 col bg-danger">Column 3</div>
+        <div class="p-2 col bg-success">Column 4</div>
+        <div class="p-2 col bg-warning">Column 5</div>
+        <div class="p-2 col bg-danger">Column 6</div>
+        <div class="p-2 col bg-success">Column 7</div>
+        <div class="p-2 col bg-warning">Column 8</div>
+        <div class="p-2 col bg-danger">Column 9</div>
+        <div class="p-2 col bg-success">Column 10</div>
+        <div class="p-2 col bg-warning">Column 11</div>
+        <div class="p-2 col bg-danger">Column 12</div>
+      </div>
+
+      <div class="row">
+        <p class=" p-3 text-start">
+          in the above example we've <span class="fw-bold">12 columns wrapped by a row.</span> the row is placed inside a container. the complete width of the container is divided into 12 equal parts, now if we place 2 or 3 or 4 or any <span class="fw-bold">number of columns less than 12 ( < 12 ) </span> the columns will be <span class="fw-bold">automatically resized according to the 100% width of the container</span> as given below
+        </p>
+      </div>
+
+    <div class="row">
+      
+          <div class="col p-2 bg-success text-white">Column 1</div>
+          <div class="col p-2 bg-warning text-white">Column 2</div>
+          <div class="col p-2 bg-danger text-white">Column 3</div>
+
+    </div>
+
+    <div class="row">
+      <p class="p-2 ">
+        similarly if the number of columns cross the limit 12, it ultimately makes that column to move to the next line, as below example shows
+      </p>
+    </div>
+
+    <div class="row text-white">
+      <div class="p-2 col bg-success">Column 1</div>
+      <div class="p-2 col bg-warning">Column 2</div>
+      <div class="p-2 col bg-danger">Column 3</div>
+      <div class="p-2 col bg-success">Column 4</div>
+      <div class="p-2 col bg-warning">Column 5</div>
+      <div class="p-2 col bg-danger">Column 6</div>
+      <div class="p-2 col bg-success">Column 7</div>
+      <div class="p-2 col bg-warning">Column 8</div>
+      <div class="p-2 col bg-danger">Column 9</div>
+      <div class="p-2 col bg-success">Column 10</div>
+      <div class="p-2 col bg-warning">Column 11</div>
+      <div class="p-2 col bg-danger">Column 12</div>
+      <div class="p-2 col bg-success">Column 13</div>
+      <div class="p-2 col bg-warning">Column 14</div>
+      <div class="p-2 col bg-danger">Column 15</div>
+      <div class="p-2 col bg-success">Column 16</div>
+    </div>
+
+    
+    <div class="row align-items-center">
+      <h4 class="col-6 fw-bold">Why this happened</h4>
+      <img src="./assets/why.jpeg" alt="" class="img-fluid col-6">
+    </div>
+
+    <div class="row">
+      <p class="p-2 ">
+        the reason is <span class="fw-bold">the use of the class col instead of col-1.</span> by default the bootstrap framework allows maximum number of <span class="fw-bold">cols</span> to be put inside a single row, in a single line on using class <span class="fw-bold">col</span>, but when we use class <span class="fw-bold">col-1</span> it will allow just 12 columns ina row, rest of them will be wrapped, as given below
+      </p>
+    </div>
+
+    <div class="row text-white">
+      <div class="p-2 col-1 bg-success">Column 1</div>
+      <div class="p-2 col-1 bg-warning">Column 2</div>
+      <div class="p-2 col-1 bg-danger">Column 3</div>
+      <div class="p-2 col-1 bg-success">Column 4</div>
+      <div class="p-2 col-1 bg-warning">Column 5</div>
+      <div class="p-2 col-1 bg-danger">Column 6</div>
+      <div class="p-2 col-1 bg-success">Column 7</div>
+      <div class="p-2 col-1 bg-warning">Column 8</div>
+      <div class="p-2 col-1 bg-danger">Column 9</div>
+      <div class="p-2 col-1 bg-success">Column 10</div>
+      <div class="p-2 col-1 bg-warning">Column 11</div>
+      <div class="p-2 col-1 bg-danger">Column 12</div>
+      <div class="p-2 col-1 bg-success">Column 13</div>
+      <div class="p-2 col-1 bg-warning">Column 14</div>
+      <div class="p-2 col-1 bg-danger">Column 15</div>
+      <div class="p-2 col-1 bg-success">Column 16</div>
+    </div>
+
+    <div class="row">
+      <h4 class="p-3 text-start my-5">Example 2: <span class="text-reset fw-normal">The Alignment, Justification and ordering Of Columns Inside A Row</span></h4>
+    </div>
+
+    <div class="row">
+      <p class="p-2">
+        if you've learned css, this would be very easy for you to understand. as you know this grid system is a <span class="fw-bold">flexbox grid system.</span> so at the backbone, i mean the css, <span class="fw-bold">flexbox is used.</span> a question comes in mind: <span class="fw-bold">if flexbox is being used then how can we use some other properties of flexbox in this grid system, like alignment of columns?</span> let us have a look at this as well,
+      </p>
+    </div>
+
+    <div class="row mt-3">
+      <h4 class="p-2 fw-bold">
+        align items at the start
+      </h4>
+    </div>
+
+  
+    <div class="row align-items-start row-height bg-primary">
+      <div class="col p-3 text-white bg-success">
+        One of three columns
+      </div>
+      <div class="col p-3 text-white bg-danger">
+        One of three columns
+      </div>
+      <div class="col p-3 text-white bg-warning">
+        One of three columns
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <h4 class="p-2 fw-bold">
+        align items at the center
+      </h4>
+    </div>
+
+  
+    <div class="row align-items-center row-height bg-primary">
+      <div class="col p-3 text-white bg-success">
+        One of three columns
+      </div>
+      <div class="col p-3 text-white bg-danger">
+        One of three columns
+      </div>
+      <div class="col p-3 text-white bg-warning">
+        One of three columns
+      </div>
+    </div>
+
+    <div class="row mt-5 h">
+      <h4 class="p-2 fw-bold">
+        align items at the end
+      </h4>
+    </div>
+
+  
+    <div class="row align-items-end row-height bg-primary">
+      <div class="col p-3 text-white bg-success">
+        One of three columns
+      </div>
+      <div class="col p-3 text-white bg-danger">
+        One of three columns
+      </div>
+      <div class="col p-3 text-white bg-warning">
+        One of three columns
+      </div>
+    </div>
+
+    <div class="row mt-5 h">
+      <h4 class="p-2 fw-bold">
+        Self Alignment
+      </h4>
+    </div>
+
+  
+    <div class="row row-height bg-primary">
+      <div class="col p-3 text-white bg-success align-self-start">
+        One of three columns
+      </div>
+      <div class="col p-3 text-white bg-danger align-self-center">
+        One of three columns
+      </div>
+      <div class="col p-3 text-white bg-warning align-self-end">
+        One of three columns
+      </div>
+    </div> 
+   
+    <div class="row">
+      <p class="p-3">
+        Now have a look at <span class="fw-bold">justify content</span>
+      </p>
+    </div>
+
+  
+    <div class="row mt-5 h">
+      <h4 class="p-2 fw-bold">
+        justify-content-start
+      </h4>
+    </div>
+
+    <div class="row bg-primary text-white my-3 justify-content-start">
+      <div class="col-4 p-3 bg-success">
+        One of two columns
+      </div>
+      <div class="col-4 p-3 bg-danger">
+        One of two columns
+      </div>
+    </div>
+
+    <div class="row mt-5 h">
+      <h4 class="p-2 fw-bold">
+        justify-content-center
+      </h4>
+    </div>
+
+
+    <div class="row bg-primary text-white my-3 justify-content-center">
+      <div class="col-4 p-3 bg-success">
+        One of two columns
+      </div>
+      <div class="col-4 p-3 bg-danger">
+        One of two columns
+      </div>
+    </div>
+
+    <div class="row mt-5 h">
+      <h4 class="p-2 fw-bold">
+        justify-content-end
+      </h4>
+    </div>
+
+
+    <div class="row bg-primary text-white my-3 justify-content-end">
+      <div class="col-4 p-3 bg-success">
+        One of two columns
+      </div>
+      <div class="col-4 p-3 bg-danger">
+        One of two columns
+      </div>
+    </div>
+
+    <div class="row mt-5 h">
+      <h4 class="p-2 fw-bold">
+        justify-content-around
+      </h4>
+    </div>
+
+
+    <div class="row bg-primary text-white my-3 justify-content-around">
+      <div class="col-4 p-3 bg-success">
+        One of two columns
+      </div>
+      <div class="col-4 p-3 bg-danger">
+        One of two columns
+      </div>
+    </div>
+
+    <div class="row mt-5 h">
+      <h4 class="p-2 fw-bold">
+        justify-content-between
+      </h4>
+    </div>
+
+
+    <div class="row bg-primary text-white my-3 justify-content-between">
+      <div class="col-4 p-3 bg-success">
+        One of two columns
+      </div>
+      <div class="col-4 p-3 bg-danger">
+        One of two columns
+      </div>
+    </div>
+
+    <div class="row mt-5 h">
+      <h4 class="p-2 fw-bold">
+        justify-content-evenly
+      </h4>
+    </div>
+
+
+    <div class="row bg-primary text-white my-3 justify-content-evenly">
+      <div class="col-4 p-3 bg-success">
+        One of two columns
+      </div>
+      <div class="col-4 p-3 bg-danger">
+        One of two columns
+      </div>
+    </div>
+
+    <div class="row">
+      <p class="p-3">
+        Now have a look at <span class="fw-bold">ordering</span>. columns with high order are moved to the right. and syntax is <span class="fw-bold">order-* (where * represents any number)</span>
+      </p>
+    </div>
+
+    
+    <div class="row text-white my-3">
+      <div class="col p-3 bg-success">
+        First in DOM, no order applied
+      </div>
+      <div class="col p-3 bg-danger order-5">
+        Second in DOM, with a larger order
+      </div>
+      <div class="col p-3 bg-warning order-1">
+        Third in DOM, with an order of 1
+      </div>
+    </div>
+
+    <div class="row  text-white my-3">
+      <div class="col p-3 bg-success order-last">
+        First in DOM, ordered last
+      </div>
+      <div class="col p-3 bg-danger">
+        Second in DOM, unordered
+      </div>
+      <div class="col p-3 bg-warning order-first">
+        Third in DOM, ordered first
+      </div>
+    </div>
+    
+    <div class="row">
+      <p class="p-3">
+        <span class="fw-bold">col-* (where * represents any number from 1 to 12)</span> is callled <span class="fw-bold">standalone column.</span>
+      </p>
+    </div>
+
+    <div class="row">
+      <p class="p-3">
+        now have a look at <span class="fw-bold">offset (the number of spans a column is moved to right is called offset).</span>
+      </p>
+    </div>
+
+    
+    <div class="row text-white my-3 bg-primary">
+      <div class="col-md-4 bg-success p-3">.col-md-4</div>
+      <div class="col-md-4 offset-md-4 bg-danger p-3">.col-md-4 .offset-md-4</div>
+    </div>
+
+
+    <div class="row text-white my-3 bg-primary">
+      <div class="col-md-3 offset-md-3 bg-success p-3">.col-md-3 .offset-md-3</div>
+      <div class="col-md-3 offset-md-3 bg-danger p-3">.col-md-3 .offset-md-3</div>
+    </div>
+
+
+    <div class="row text-white my-3 bg-primary">
+      <div class="col-md-6 offset-md-3 bg-success p-3">.col-md-6 .offset-md-3</div>
+    </div>
+
+    <div class="row">
+      <p class="p-3">now a small look at the <span class="fw-bold">margin-start (ms-*) and margin-end (me-*)</span></p>
+    </div>
+
+    
+    <div class="row text-white my-3 bg-primary">
+      <div class="col-md-4 bg-success p-3">.col-md-4</div>
+      <div class="col-md-4 ms-auto bg-danger p-3">.col-md-4 .ms-auto</div>
+    </div>
+
+
+    <div class="row text-white my-3 bg-primary">
+      <div class="col-md-3 ms-md-auto bg-success p-3">.col-md-3 .ms-md-auto</div>
+      <div class="col-md-3 ms-md-auto bg-danger p-3">.col-md-3 .ms-md-auto</div>
+    </div>
+
+
+    <div class="row text-white my-3 bg-primary">
+      <div class="col-auto me-auto bg-success p-3">.col-auto .me-auto</div>
+      <div class="col-auto bg-danger p-3">.col-auto</div>
+    </div>
+
+    <div class="row">
+      <p class="p-3">what is <span class="fw-bold">col-auto? col-auto takes the space according to the content placed inside of it</span></p>
+    </div>
+  
+    <div class="row">
+      <h4 class="p-3 text-start my-5">Example 3: <span class="text-reset fw-normal">Breakpoints</span></h4>
+    </div>
+
+    <div class="row">
+      <p class="p-3 text-start">what are <span class="fw-bold">breakpoints?</span> as we have discussed the <span class="fw-bold">mobile first approach </span>at the start of this article, so in order to achieve responsiveness for all screen sizes, starting from mobile to large screen sizes,we have some breakpoints. <br><br><span class="fw-bold">xs (< 567) phones & small screens</span> <br><span class="fw-bold">sm (>= 567) large phones & small tablets</span> <br><span class="fw-bold">md (>= 768) tablets</span> <br><span class="fw-bold">l (>= 992) small laptops & larger tablets in landscape orientation</span> <br><span class="fw-bold">xl (>= 1200) large computer screens</span> <br><span class="fw-bold">xll (>= 1400) extra large computer screens</span></p>
+    </div>
+  
+
+    <div class="row">
+      <p class="p-3">we can customize the number of columns in a row depending on the screen we want, when the specific breakpoint is reached the columns are placed side by side, and <span class="fw-bold">when the viewport width is less than the specified breakpoint, the columns are stacked on one another</span>. now let us learn some of the magics of breakpoints</p>
+    </div>
+
+    <div class="row">
+      <h4 class="p-3 text-start my-5">magic number 1: <span class="text-reset fw-normal">Breakpoints with container</span></h4>
+    </div>
+
+    <div class="row text-start">
+      <p class="p-3">before starting the magician technique of breakpoints on container, we'll leran about different types of containers. following are <span class="fw-bold">2 types of containers</span><br> <br><span class="fw-bold"> 1)container (having margin auto on both sides along x-axis) <br> 2)container-fluid (having full screen width size)</span>, have a <a href="./container.html" target="_blank" class="fw-bold">look</a></p>
+    </div>
+
+    <div class="row">
+      <h4 class="p-3 text-start my-5">magic number 2: <span class="text-reset fw-normal">Breakpoints with columns</span></h4>
+    </div>
+
+    <div class="row text-start">
+      <p class="p-3">for responsiveness purpose you can we mention breakpoints with columns as well (which are wrapped by rows in a container). how much a column should span on which screen can easily be tackled by use of <span class="fw-bold">breakpoints + colspans.</span> have a <a href="./columns.html" target="_blank" class="fw-bold">look</a></p>
+    </div>
+
+    <div class="row bg-black text-white">
+      <h1 class="p-3">Tip Number 1</h1>
+    </div>
+
+    <div class="row">
+      <p class="p-3">
+        The Common Method of mentioning the breakpoints with properties is using the following simple convention: <br> <br> <span class="fw-bold"> attribute+breakpoint+value</span>
+      </p>
+    </div>
+
+    <div class="row">
+      <h4 class="p-3 text-start">Examples: <br> <br></h4>
+    </div>
+
+    <div class="row d-block text-start fw-bold">
+      <div class="col">1) d-md-none (at medium sized screen display is none)</div>
+      <div class="col">2) col-md-6 (at medium sized screen column span will be 6)</div>
+      <div class="col">3) p-md-3 (at medium sized screen padding will be 3 [mentioned on bootstrap scale] )</div>
+      <div class="col">3) m-md-3 (at medium sized screen margin will be 3 [mentioned on bootstrap scale] )</div>
+    </div>
+
+    <div class="row">
+      <h4 class="p-3 text-start my-5">magic number 3: <span class="text-reset fw-normal">different colspans for different Breakpoints for the same div</span></h4>
+    </div>
+
+    <div class="row">
+      <p class="p-3">
+        the colspans are enable according to the <span class="fw-bold">correspondence between the current viewport sidth and the breakpoints</span>, have a <a href="./multiple-col-classes.html" class="fw-bold" target="_blank">look</a>
+      </p>
+    </div>
+
+    <div class="row mt-5 align-items-center">
+      <div class="col">
+        <h4 class="p-2 fw-bold">
+          Question: What is Gutter?
+        </h4>
+      </div>
+      <div class="col "><img src="./assets/gutter.jpg" alt="" class="img-fluid" style="border-radius: 50%;"></div>
+    </div>
+
+    <div class="row">
+      <p class="p-3">
+        <span class="fw-bold">Gutter</span> is the padding applied on horizontal axis of ezch column inside a row. on both sides, individually it is 15px, collectively it is <span class="fw-bold text-normal-case">30px. Represented by "g"</span>
+      </p>
+    </div>
+
+    <div class="row align-items-center">
+      <div class="col order-1">
+        <h4 class="p-2 fw-bold">It's time of submission</h4>
+      </div>
+      <div class="col">
+        <img src="./assets/oh-no.jpg" alt="" class="img-fluid">
+      </div>
+    </div>
+
+    
+
+
+  </div>
+  
+  <div class="container-fluid">
+    <h1 class="bg-black text-white p-3 text-end text-normal-case">To be continued...</h1>
+  </div>
+  
+</body>
+</html>
